@@ -1,15 +1,46 @@
 ---
-import astroLogo from '../assets/astro.svg';
+import StickyHeader from "./StickyHeader.jsx"
+import { Facebook, Instagram, Github } from '@lucide/astro'
 ---
 
 <div id="container">
-  <main class="bg-red-300">
-		<h1>Portafolio Leonardo Diaz</h1>
+  <main class="">
+		<header class="z-10 w-full fixed top-0 left-0 backdrop-blur-2xl transition-[backdrop-filter] ease-in-out duration-500">
+			<div class="nav-bar relative h-[5rem] max-w-[1250px] flex justify-between items-center mx-auto px-5 transition-all duration-[600ms] ease-in-out ">
+				<a class="text-black font-bold text-2xl" href="#">Leonardo</a>
+				<div class="text-black text-md font-semibold flex gap-x-1">
+					<a href="" class="hover:bg-[#C58846] hover:text-white transition-all px-2 py-1 rounded-sm">Inicio</a>
+					<a href="" class="hover:bg-[#C58846] hover:text-white transition-all px-2 py-1 rounded-sm">Sobre mi</a>
+					<a href="" class="hover:bg-[#C58846] hover:text-white transition-all px-2 py-1 rounded-sm">Skills</a>
+					<a href="" class="hover:bg-[#C58846] hover:text-white transition-all px-2 py-1 rounded-sm">Proyectos</a>
+					<a href="" class="hover:bg-[#C58846] hover:text-white transition-all px-2 py-1 rounded-sm">Servicios</a>
+					<a href="" class="hover:bg-[#C58846] hover:text-white transition-all px-2 py-1 rounded-sm">Contacto</a>
+				</div>
+			</div>
+		</header>
+		<section class="relative max-w-[1250px] min-h-[100vh] margin-x-auto px-[4rem] py-[2rem] flex flex-column">
+			<div class="flex justify-between items-center w-full">
+				<div class="flex flex-column mt-[40px]">
+					<a class="text-[1.5em] mx-[10px] hover:text-[#C58846]" href=""><Facebook /></a>
+					<a class="text-[1.5em] mx-[10px] hover:text-[#C58846]" href=""><Instagram /></a>
+					<a class="text-[1.5em] mx-[10px] hover:text-[#C58846]" href=""><Github /></a>
+				</div>
+				<div></div>
+			</div>
+		</section>
+		<div class="w-full h-screen bg-gray-500">Test</div>
   </main>
 
   
 </div>
 
 <style>
-  
+  header.sticky {
+		background: rgba(255, 255, 255, 0.1);
+		box-shadow: 0px 0px 10px rgb(0 0 0 /10%);
+	}
+
+	header.sticky .nav-bar {
+		height: calc(2.5rem + 1rem);
+	}
 </style>
