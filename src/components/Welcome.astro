@@ -6,8 +6,8 @@ import { FaPython, FaReact, FaPhp, FaJava, FaAws, FaDocker, FaNodeJs } from "rea
 
 <div id="container">
   <main class="">
-		<header class="z-10 w-full fixed top-0 left-0 backdrop-blur-2xl transition-[backdrop-filter] ease-in-out duration-500">
-			<div class="nav-bar relative h-[5rem] max-w-[1250px] flex justify-between items-center mx-auto px-5 transition-all duration-[600ms] ease-in-out ">
+		<header class=" z-10 w-full md:block fixed hidden top-0 left-0 backdrop-blur-2xl transition-[backdrop-filter] ease-in-out duration-500">
+			<div class="nav-bar relative h-[5rem] md:max-w-[1250px] flex justify-between items-center mx-auto px-5 transition-all duration-[600ms] ease-in-out ">
 				<a class="text-black font-bold text-2xl" href="#">Leonardo</a>
 				<div class="text-black text-md font-semibold flex gap-x-1">
 					<a href="" class="hover:bg-[#C58846] hover:text-white transition-all px-2 py-1 rounded-sm">Inicio</a>
@@ -19,24 +19,27 @@ import { FaPython, FaReact, FaPhp, FaJava, FaAws, FaDocker, FaNodeJs } from "rea
 				</div>
 			</div>
 		</header>
-		<section class="relative w-full min-h-[90vh] margin-x-auto px-[6rem] py-[2rem] flex flex-column ">
+		<section class="md:relative bg-red-300 w-full min-h-[90vh] md:min-h-[100vh] md:margin-x-auto px-2 md:px-[6rem] md:py-[2rem] mt-[2rem] flex flex-column ">
 			<div class="flex justify-between items-center w-full">
-				<div class="flex flex-col gap-y-10 mt-[40px]">
+				<div class="flex flex-col gap-y-10 mt-[40px] hidden md:block">
 					<a class="text-[1.5em] mx-[10px] hover:text-[#C58846]" href=""><Linkedin /></a>
 					<a class="text-[1.5em] mx-[10px] hover:text-[#C58846]" href=""><Instagram /></a>
 					<a class="text-[1.5em] mx-[10px] hover:text-[#C58846]" href=""><Github /></a>
 				</div>
-				<div class="px-6 leading-5">
-					<div class="leading-14">
-						<h2 class="text-[4em] font-semibold text-[#C58846]">FullStack Developer</h2>
-						<h2 class="text-[4em] font-semibold text-black">Devops Engineer</h2>
+				<div class="px-6 md:leading-5">
+					<div class="leading-14 text-center md:text-left">
+						<h2 class="md:text-[4em] text-[3em] font-semibold text-[#C58846]">FullStack Developer</h2>
+						<h2 class="md:text-[4em] text-[3em] font-semibold text-black">Devops Engineer</h2>
+					</div>
+					<div class="w-full flex flex-col items-center justify-center w-full block md:hidden mt-3">
+						<img src="Usuario-NoFondo.png" alt="Imagen generada con IA">
 					</div>
 					<p class="mt-6 px-1 font-semibold text-gray-600 pr-2">Desarrollador con experiencia en React, Node js, Python, PHP y Java. Me especializo en construir aplicaciones eficientes, escalables y bien integradas con flujos CI/CD. <br />Trabajo con herramientas como Docker, GitHub Actions y Azure DevOps para asegurar entregas rápidas y confiables.</p>
 					<div class="mt-10">
 						<a href="" class="mt-6 px-5 hover:bg-black py-2 rounded-full bg-[#C58846] transition-all text-black hover:text-white font-semibold">Conversemos</a>
 					</div>
 				</div>
-				<div class="object-cover">
+				<div class="object-cover hidden md:block">
 					<img src="Usuario-NoFondo.png" alt="Imagen generada con IA">
 				</div>
 			</div>
