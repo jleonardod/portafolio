@@ -1,6 +1,6 @@
 ---
 import StickyHeader from "./StickyHeader.jsx"
-import { Linkedin, Instagram, Github, ArrowDownToLine } from '@lucide/astro'
+import { Linkedin, Instagram, Github, ArrowDownToLine, FolderCode, ChevronRight, Infinity, Bot, Brain } from '@lucide/astro'
 import { FaPython, FaReact, FaPhp, FaJava, FaAws, FaDocker, FaNodeJs } from "react-icons/fa"
 ---
 
@@ -13,7 +13,7 @@ import { FaPython, FaReact, FaPhp, FaJava, FaAws, FaDocker, FaNodeJs } from "rea
 					<a href="" class="hover:bg-[#C58846] hover:text-white transition-all px-2 py-1 rounded-sm">Inicio</a>
 					<a href="" class="hover:bg-[#C58846] hover:text-white transition-all px-2 py-1 rounded-sm">Acerca</a>
 					<a href="" class="hover:bg-[#C58846] hover:text-white transition-all px-2 py-1 rounded-sm">Habilidades</a>
-					<a href="" class="hover:bg-[#C58846] hover:text-white transition-all px-2 py-1 rounded-sm">Proyectos</a>
+					<!--<a href="" class="hover:bg-[#C58846] hover:text-white transition-all px-2 py-1 rounded-sm">Proyectos</a>-->
 					<a href="" class="hover:bg-[#C58846] hover:text-white transition-all px-2 py-1 rounded-sm">Servicios</a>
 					<a href="" class="hover:bg-[#C58846] hover:text-white transition-all px-2 py-1 rounded-sm">Contacto</a>
 				</div>
@@ -95,6 +95,46 @@ import { FaPython, FaReact, FaPhp, FaJava, FaAws, FaDocker, FaNodeJs } from "rea
 						<div class="col-span-1 bg-black text-white text-8xl md:text-9xl flex justify-center items-center py-8 md:py-10">
 							<FaDocker />
 						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="relative w-full min-h-[100vh] margin-x-auto text-center md:px-[6rem] py-[0rem] flex flex-column ">
+			<div class="flex justify-center flex-col items-center w-full">
+				<h1 class="text-[3.5em] md:text-[4.5em] font-bold mt-2 titulo-section">Servicios</h1>
+				<h2 class="text-[2.5em] font-bold -mt-14 border-b-6 border-[#C58846]">Servicios</h2>
+				<div class="grid grid-cols-1 md:grid-cols-4 gap-y-2 md:gap-x-5 w-full mt-10 md:mt-24 md:px-0 px-5">
+					<div class="col-span-1 bg-black rounded-lg py-5 px-4 flex flex-col">
+						<div class="text-4xl">
+							<FolderCode size={48} class="text-white" />
+						</div>
+						<h3 class="text-white font-semibold text-xl mt-4">Desarrollo FullStack</h3>
+						<p class="text-white text-left mt-5">Desarrollo de aplicaciones web modernas y escalables con React y Node.js. Arquitectura limpia, componentes reutilizables, integración de APIs REST y diseño responsive.</p>
+						<a href="#" class="mt-10 text-white text-left font-semibold flex">Saber Más <ChevronRight /></a>
+					</div>
+					<div class="col-span-1 bg-[#C58846] rounded-lg py-5 px-4 flex flex-col">
+						<div class="text-4xl">
+							<Infinity size={48} class="text-black" />
+						</div>
+						<h3 class="text-black font-semibold text-xl mt-4">Automatización DevOps</h3>
+						<p class="text-black text-left mt-5">Desarrollo de aplicaciones web modernas y escalables con React y Node.js. Arquitectura limpia, componentes reutilizables, integración de APIs REST y diseño responsive.</p>
+						<a href="#" class="mt-10 text-black text-left font-semibold flex">Saber Más <ChevronRight /></a>
+					</div>
+					<div class="col-span-1 bg-black rounded-lg py-5 px-4 flex flex-col">
+						<div class="text-4xl">
+							<Bot size={48} class="text-white" />
+						</div>
+						<h3 class="text-white font-semibold text-xl mt-4">Automatizaciones</h3>
+						<p class="text-white text-left mt-5">Automatización de procesos repetitivos, validaciones complejas, pruebas E2E y scraping con Selenium, Serenity BDD y Python para mejorar eficiencia y precisión.</p>
+						<a href="#" class="mt-10 text-white text-left font-semibold flex">Saber Más <ChevronRight /></a>
+					</div>
+					<div class="col-span-1 bg-[#C58846] rounded-lg py-5 px-4 flex flex-col">
+						<div class="text-4xl">
+							<Brain size={48} class="text-white" />
+						</div>
+						<h3 class="text-white font-semibold text-xl mt-4">Consultorias</h3>
+						<p class="text-white text-left mt-5">Asesoría personalizada en DevOps, arquitectura web, ciencia de datos e integración de IA. Ideal para equipos o startups que necesitan una guía técnica experta y confiable.</p>
+						<a href="#" class="mt-10 text-white text-left font-semibold flex">Saber Más <ChevronRight /></a>
 					</div>
 				</div>
 			</div>
