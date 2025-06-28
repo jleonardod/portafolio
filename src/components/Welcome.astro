@@ -1,6 +1,6 @@
 ---
 import StickyHeader from "./StickyHeader.jsx"
-import { Linkedin, Instagram, Github, ArrowDownToLine, FolderCode, ChevronRight, Infinity, Bot, Brain } from '@lucide/astro'
+import { Linkedin, Instagram, Github, ArrowDownToLine, FolderCode, ChevronRight, Infinity, Bot, Brain, Phone, Mail } from '@lucide/astro'
 import { FaPython, FaReact, FaPhp, FaJava, FaAws, FaDocker, FaNodeJs } from "react-icons/fa"
 ---
 
@@ -10,16 +10,16 @@ import { FaPython, FaReact, FaPhp, FaJava, FaAws, FaDocker, FaNodeJs } from "rea
 			<div class="nav-bar relative h-[5rem] md:max-w-[1250px] flex justify-between items-center mx-auto px-5 transition-all duration-[600ms] ease-in-out ">
 				<a class="text-black font-bold text-2xl" href="#">Leonardo</a>
 				<div class="text-black text-md font-semibold flex gap-x-1">
-					<a href="" class="hover:bg-[#C58846] hover:text-white transition-all px-2 py-1 rounded-sm">Inicio</a>
-					<a href="" class="hover:bg-[#C58846] hover:text-white transition-all px-2 py-1 rounded-sm">Acerca</a>
-					<a href="" class="hover:bg-[#C58846] hover:text-white transition-all px-2 py-1 rounded-sm">Habilidades</a>
+					<a href="#Home" class="hover:bg-[#C58846] hover:text-white transition-all px-2 py-1 rounded-sm">Inicio</a>
+					<a href="#Acerca" class="hover:bg-[#C58846] hover:text-white transition-all px-2 py-1 rounded-sm">Acerca</a>
+					<a href="#Habilidades" class="hover:bg-[#C58846] hover:text-white transition-all px-2 py-1 rounded-sm">Habilidades</a>
 					<!--<a href="" class="hover:bg-[#C58846] hover:text-white transition-all px-2 py-1 rounded-sm">Proyectos</a>-->
-					<a href="" class="hover:bg-[#C58846] hover:text-white transition-all px-2 py-1 rounded-sm">Servicios</a>
-					<a href="" class="hover:bg-[#C58846] hover:text-white transition-all px-2 py-1 rounded-sm">Contacto</a>
+					<a href="#Servicios" class="hover:bg-[#C58846] hover:text-white transition-all px-2 py-1 rounded-sm">Servicios</a>
+					<a href="#Contacto" class="hover:bg-[#C58846] hover:text-white transition-all px-2 py-1 rounded-sm">Contacto</a>
 				</div>
 			</div>
 		</header>
-		<section class="md:relative w-full md:min-h-[90vh] min-h-[100vh] md:margin-x-auto px-2 md:px-[6rem] md:py-[2rem] mt-[1rem] flex flex-column ">
+		<section id="Home" class="md:relative w-full md:min-h-[90vh] min-h-[100vh] md:margin-x-auto px-2 md:px-[6rem] md:py-[2rem] mt-[1rem] flex flex-column ">
 			<div class="flex flex-col items-center w-full md:flex-row md:justify-between md:items-center">
 				<div class="flex flex-col gap-y-10 mt-[40px] hidden md:block">
 					<a class="text-[1.5em] mx-[10px] hover:text-[#C58846]" href=""><Linkedin /></a>
@@ -44,7 +44,7 @@ import { FaPython, FaReact, FaPhp, FaJava, FaAws, FaDocker, FaNodeJs } from "rea
 				</div>
 			</div>
 		</section>
-		<section class="relative w-full min-h-[90vh] mt-4 md:-mt-24 margin-x-auto md:px-[6rem] flex flex-column ">
+		<section id="Acerca" class="relative w-full min-h-[90vh] mt-4 md:-mt-24 margin-x-auto md:px-[6rem] flex flex-column ">
 			<div class="flex justify-center flex-col items-center w-full">
 				<h1 class="w-full text-center text-[3.5em] md:text-[4.5em] font-bold mt-2 titulo-section">Acerca</h1>
 				<h2 class="text-[2.5em] font-bold -mt-14 border-b-6 border-[#C58846]">Acerca</h2>
@@ -62,7 +62,7 @@ import { FaPython, FaReact, FaPhp, FaJava, FaAws, FaDocker, FaNodeJs } from "rea
 				</div>
 			</div>
 		</section>
-		<section class="relative w-full min-h-[100vh] margin-x-auto text-center md:px-[6rem] py-[0rem] flex flex-column ">
+		<section id="Habilidades" class="relative w-full min-h-[100vh] margin-x-auto text-center md:px-[6rem] py-[0rem] flex flex-column ">
 			<div class="flex justify-center flex-col items-center w-full">
 				<h1 class="text-[3.5em] md:text-[4.5em] font-bold mt-2 titulo-section">Habilidades</h1>
 				<h2 class="text-[2.5em] font-bold -mt-14 border-b-6 border-[#C58846]">Habilidades</h2>
@@ -99,7 +99,7 @@ import { FaPython, FaReact, FaPhp, FaJava, FaAws, FaDocker, FaNodeJs } from "rea
 				</div>
 			</div>
 		</section>
-		<section class="relative w-full min-h-[100vh] margin-x-auto text-center md:px-[6rem] py-[0rem] flex flex-column ">
+		<section id="Servicios" class="relative w-full min-h-[100vh] margin-x-auto text-center md:px-[6rem] py-[0rem] flex flex-column ">
 			<div class="flex justify-center flex-col items-center w-full">
 				<h1 class="text-[3.5em] md:text-[4.5em] font-bold mt-2 titulo-section">Servicios</h1>
 				<h2 class="text-[2.5em] font-bold -mt-14 border-b-6 border-[#C58846]">Servicios</h2>
@@ -135,6 +135,69 @@ import { FaPython, FaReact, FaPhp, FaJava, FaAws, FaDocker, FaNodeJs } from "rea
 						<h3 class="text-white font-semibold text-xl mt-4">Consultorias</h3>
 						<p class="text-white text-left mt-5">Asesoría personalizada en DevOps, arquitectura web, ciencia de datos e integración de IA. Ideal para equipos o startups que necesitan una guía técnica experta y confiable.</p>
 						<a href="#" class="mt-10 text-white text-left font-semibold flex">Saber Más <ChevronRight /></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="Contacto" class="relative w-full min-h-[100vh] margin-x-auto text-center md:px-[4rem] pb-10 flex flex-column ">
+			<div class="flex justify-center flex-col items-center w-full">
+				<h1 class="text-[3.5em] md:text-[4.5em] font-bold mt-2 titulo-section">Contacto</h1>
+				<h2 class="text-[2.5em] font-bold -mt-14 border-b-6 border-[#C58846]">Contacto</h2>
+				<div class="w-full pt-2 pb-6 mt-5 bg-black text-white rounded-md grid grid-cols-5 px-6 gap-x-4">
+					<div class="col-span-2 text-left gap-y-2 flex flex-col px-4 py-2">
+						<h2 class="font-bold text-3xl">Contactame</h2>
+						<p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet ipsam consequuntur laudantium veniam maiores nobis ducimus temporibus odio et asperiores, repellat suscipit ut consectetur corporis possimus optio quas itaque ratione?</p>
+						<div class="mt-4 flex flex-col gap-y-4">
+							<div class="flex gap-x-3 font-semibold">
+								<Phone class="bg-[#C58846] p-1 h-8 w-8 rounded-sm" /> 
+								<p class="mt-1">+57 300 427 0806</p>
+							</div>
+							<div class="flex gap-x-3 font-semibold">
+								<Mail class="bg-[#C58846] p-1 h-8 w-8 rounded-sm" /> 
+								<p class="mt-1">jldiaz9623@gmail.com</p>
+							</div>
+						</div>
+						<div class="flex flex-col gap-y-2 mt-3">
+							<h1 class=" pb-1 border-b-1 border-white font-semibold">Sigueme</h1>
+							<div class="flex gap-x-2">
+								<Linkedin class="bg-[#C58846] p-1 h-8 w-8" /> 
+								<Github class="bg-[#C58846] p-1 h-8 w-8" /> 
+								<Instagram class="bg-[#C58846] p-1 h-8 w-8" /> 
+							</div>
+							
+						</div>
+						
+					</div>
+					<div class="col-span-3 bg-gray-800 rounded-lg mt-8 px-8 py-8">
+						<form class="flex flex-col gap-y-4">
+							<div class="grid grid-cols-2 text-left gap-x-4">
+								<div class=" flex flex-col gap-y-1">
+									<label class="font-semibold text-sm" for="nombre">Nombre:</label>
+									<input class="focus:border-none py-2 px-3 rounded-lg bg-gray-700" type="text" name="nombre" id="nombre">
+								</div>
+								<div class=" flex flex-col gap-y-1">
+									<label class="font-semibold text-sm" for="nombre">Apellido:</label>
+									<input class="focus:border-none py-2 px-3 rounded-lg bg-gray-700" type="text" name="nombre" id="nombre">
+								</div>
+							</div>
+							<div class="grid grid-cols-2 text-left gap-x-4">
+								<div class=" flex flex-col gap-y-1">
+									<label class="font-semibold text-sm" for="nombre">Teléfono:</label>
+									<input class="focus:border-none py-2 px-3 rounded-lg bg-gray-700" type="text" name="nombre" id="nombre">
+								</div>
+								<div class=" flex flex-col gap-y-1">
+									<label class="font-semibold text-sm" for="nombre">Asunto:</label>
+									<input class="focus:border-none py-2 px-3 rounded-lg bg-gray-700" type="text" name="nombre" id="nombre">
+								</div>
+							</div>
+							<div class="text-left flex flex-col">
+								<label for="mensaje">Mensaje</label>
+								<textarea name="mensaje" id="" cols="4" rows="4" placeholder="En que te puedo ayudar..." class=" py-2 px-4 bg-gray-700 rounded-lg"></textarea>
+							</div>
+							<div class="w-full flex flex-col justify-start items-left">
+								<input type="submit" class="bg-[#C58846] w-24 py-2 rounded-lg hover:text-black cursor-pointer font-semibold transition-all" value="Enviar">
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
