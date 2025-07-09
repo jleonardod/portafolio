@@ -2,6 +2,7 @@
 import StickyHeader from "./StickyHeader.jsx"
 import { Linkedin, Instagram, Github, ArrowDownToLine, FolderCode, ChevronRight, Infinity, Bot, Brain, Phone, Mail } from '@lucide/astro'
 import { FaPython, FaReact, FaPhp, FaJava, FaAws, FaDocker, FaNodeJs } from "react-icons/fa"
+import ContactForm from "./ContactForm.jsx"
 ---
 
 <div id="container">
@@ -110,7 +111,7 @@ import { FaPython, FaReact, FaPhp, FaJava, FaAws, FaDocker, FaNodeJs } from "rea
 						</div>
 						<h3 class="text-white font-semibold text-xl mt-4">Desarrollo FullStack</h3>
 						<p class="text-white text-left mt-5">Desarrollo de aplicaciones web modernas con React, Node.js y Python. Diseño de APIs, lógica backend, componentes reutilizables y arquitectura escalable y responsive.</p>
-						<a href="https://wa.me/573004270806?text=Hola%20Leonardo,%20Quisiera%20sobre%20tu%20servicio%20de%desarrollo%20FullStack" class="mt-10 text-white text-left font-semibold flex">Saber Más <ChevronRight /></a>
+						<a href="https://wa.me/573004270806?text=Hola%20Leonardo,%20Quisiera%20sobre%20tu%20servicio%20de%20desarrollo%20FullStack" class="mt-10 text-white text-left font-semibold flex">Saber Más <ChevronRight /></a>
 					</div>
 					<div class="col-span-1 bg-[#C58846] rounded-lg py-5 px-4 flex flex-col">
 						<div class="text-4xl">
@@ -118,7 +119,7 @@ import { FaPython, FaReact, FaPhp, FaJava, FaAws, FaDocker, FaNodeJs } from "rea
 						</div>
 						<h3 class="text-white font-semibold text-xl mt-4">Automatización DevOps</h3>
 						<p class="text-white text-left mt-5">Diseño de pipelines CI/CD, control de versiones con Git y Liquibase, y despliegues automatizados con GitHub Actions, Docker y Azure DevOps en entornos multiambiente.</p>
-						<a href="https://wa.me/573004270806?text=Hola%20Leonardo,%20Quisiera%20sobre%20tu%20servicio%20de%Automatizaciones%DevOps" class="mt-10 text-white text-left font-semibold flex">Saber Más <ChevronRight /></a>
+						<a href="https://wa.me/573004270806?text=Hola%20Leonardo,%20Quisiera%20sobre%20tu%20servicio%20de%20Automatizaciones%20DevOps" class="mt-10 text-white text-left font-semibold flex">Saber Más <ChevronRight /></a>
 					</div>
 					<div class="col-span-1 bg-black rounded-lg py-5 px-4 flex flex-col">
 						<div class="text-4xl">
@@ -126,7 +127,7 @@ import { FaPython, FaReact, FaPhp, FaJava, FaAws, FaDocker, FaNodeJs } from "rea
 						</div>
 						<h3 class="text-white font-semibold text-xl mt-4">Automatizaciones</h3>
 						<p class="text-white text-left mt-5">Automatización de procesos repetitivos, validaciones complejas, pruebas E2E y scraping con Selenium, Serenity BDD y Python para mejorar eficiencia y precisión.</p>
-						<a href="https://wa.me/573004270806?text=Hola%20Leonardo,%20Quisiera%20sobre%20tu%20servicio%20de%Automatizaciones" class="mt-10 text-white text-left font-semibold flex">Saber Más <ChevronRight /></a>
+						<a href="https://wa.me/573004270806?text=Hola%20Leonardo,%20Quisiera%20sobre%20tu%20servicio%20de%20Automatizaciones" class="mt-10 text-white text-left font-semibold flex">Saber Más <ChevronRight /></a>
 					</div>
 					<div class="col-span-1 bg-[#C58846] rounded-lg py-5 px-4 flex flex-col">
 						<div class="text-4xl">
@@ -169,35 +170,7 @@ import { FaPython, FaReact, FaPhp, FaJava, FaAws, FaDocker, FaNodeJs } from "rea
 						
 					</div>
 					<div class="col-span-3 bg-gray-800 rounded-lg mt-8 px-8 py-8">
-						<form class="flex flex-col gap-y-4">
-							<div class="grid grid-cols-1 md:grid-cols-2 text-left gap-x-4">
-								<div class=" flex flex-col gap-y-1">
-									<label class="font-semibold text-sm" for="nombre">Nombre:</label>
-									<input class="focus:border-none py-2 px-3 rounded-lg bg-gray-700" type="text" name="nombre" id="nombre">
-								</div>
-								<div class=" flex flex-col gap-y-1">
-									<label class="font-semibold text-sm" for="nombre">Apellido:</label>
-									<input class="focus:border-none py-2 px-3 rounded-lg bg-gray-700" type="text" name="nombre" id="nombre">
-								</div>
-							</div>
-							<div class="grid grid-cols-1 md:grid-cols-2 text-left gap-x-4">
-								<div class=" flex flex-col gap-y-1">
-									<label class="font-semibold text-sm" for="nombre">Teléfono:</label>
-									<input class="focus:border-none py-2 px-3 rounded-lg bg-gray-700" type="text" name="nombre" id="nombre">
-								</div>
-								<div class=" flex flex-col gap-y-1">
-									<label class="font-semibold text-sm" for="nombre">Asunto:</label>
-									<input class="focus:border-none py-2 px-3 rounded-lg bg-gray-700" type="text" name="nombre" id="nombre">
-								</div>
-							</div>
-							<div class="text-left flex flex-col">
-								<label for="mensaje">Mensaje</label>
-								<textarea name="mensaje" id="" cols="4" rows="4" placeholder="En que te puedo ayudar..." class=" py-2 px-4 bg-gray-700 rounded-lg"></textarea>
-							</div>
-							<div class="w-full flex flex-col justify-start items-left">
-								<input type="submit" class="bg-[#C58846] w-24 py-2 rounded-lg hover:text-black cursor-pointer font-semibold transition-all" value="Enviar">
-							</div>
-						</form>
+						<ContactForm client:load />
 					</div>
 				</div>
 			</div>
